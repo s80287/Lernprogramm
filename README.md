@@ -1,6 +1,9 @@
 # Beleg webbasiertes Lernprogramm
 - Duy Tien Nguyen, s80287
 ---
+## Bemerkung
+- Das Programm wurde im Browser `Firefox` überprüft
+---
 ## Funktionalität
 - Wahl zwischen 3 Kategorien: Mathe, Internettechnologie und Allgemein
 - zufällige Auswahl und Darstellung einer Aufgabe mit 4 Auswahlmöglichkeiten
