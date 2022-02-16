@@ -84,9 +84,9 @@ class Result {
 //Array mit Ergebnissen von 0 bis 75%
 const results =
     [
-        new Result("Sie sollten viel üben", 0),
+        new Result("Sie sollten noch viel üben", 0),
         new Result("Sie sollten noch üben", 25),
-        new Result("Sie kennen das Thema schon, sollte aber noch üben", 50),
+        new Result("Sie kennen das Thema schon, sollten aber noch üben", 50),
         new Result("Sie kennen das Thema gut", 75)
     ];
 
