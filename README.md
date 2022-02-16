@@ -1,6 +1,6 @@
 # Beleg webbasiertes Lernprogramm
 - Duy Tien Nguyen, s80287
-- [Link zu Webseite](https://s80287.github.io/Lernprogramm) 
+- [Link zur Webseite](https://s80287.github.io/Lernprogramm) 
 ---
 ## Bemerkung
 - Das Programm wurde im Browser `Firefox` überprüft

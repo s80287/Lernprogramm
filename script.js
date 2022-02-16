@@ -180,6 +180,7 @@ function Click(index) {
 rest.onclick = function () { // überschreibt einen vorhandenen Handler für AJAX
     xhrHandler();
     //fragesatz.innerHTML = "<img src='image/load.gif'  width='70%' height='80%'  float='left' overflow= 'hidden'/>";
+    fragesatz.innerHTML = "loading...";
     buttonsElem.innerHTML = "";
     pagesElem.innerHTML = "";
     shuffle(final_result);
