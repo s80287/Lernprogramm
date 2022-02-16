@@ -226,20 +226,20 @@ function shuffle(array) {
 // erzeugt ein JavaScript-Objekt (damit kann es für JSON in literal genutzt werden)))
 const mathefragen =
     [
-//1
+/*
+    //1
     {
         text: " \\int_{-2}^4(8+2x-x^2)\\,dx",
         answers: [{text: "14", value: 0}, {text: "3", value: 0}, {text: "36", value: 1}, {text: "71", value: 0}]
 
     },
-//2
+    //2
     {
         text: "10(x-9)=-10",
         answers: [{text: "39", value: 0}, {text: "21", value: 0}, {text: "8", value: 1}, {text: "6", value: 0}]
 
     },
-
-//3
+    //3
     {
         //KaTex Schreibungsformat
         text: "\\text{Welche von der vier  Trigonometrie-}\\\\ \\text{Formeln ist falsch geschrieben?} \\\\ 1.) \\tg{x}\\ctg{x}=1 \\\\2.) \\sin^2x + \\cos^2x = 1  \\\\3.) \\tg^2{x}={\\sin{x} \\over \\cos{x} }\\\\4.) \\sin{3x}=3\\sin{x}-4\\sin^3{x} ",
@@ -252,26 +252,81 @@ const mathefragen =
         answers: [{text: "+ ∞", value: 1}, {text: "8e", value: 0}, {text: "0", value: 0}, {text: "1", value: 0}]
 
     },
-//5
+    //5
     {
         text: "\A=\\begin{pmatrix} 3 & -1 \\\\ 4 & 2 \\end{pmatrix}\\\\ \B=\\begin{pmatrix} 3 & 4 \\\\ 1 & 3 \\end{pmatrix} \\textit{,dann }\\\\ \\textit{Determinante } (\A^{-1} * \B)^{-2}=",
         answers: [{text: "-0.5", value: 0}, {text: "4", value: 0}, {text: "-4", value: 1}, {text: "0.5", value: 0}]
 
     },
-//6
+    //6
     {
         text: `2 * 10^{-3} =`,
         answers: [{text: "0,002", value: 1}, {text: "0,2", value: 0}, {text: "200", value: 0}, {text: "2000", value: 0}]
 
     },
+    //7    
     {
         text: "\\text{Wie hoch ist dein Sparguthaben,} \\\\ \\text{wenn du bei einem Zinssatz} \\\\ \\text{ von 1,5\\% im Jahr, Zinsen in Höhe} \\\\ \\text{von 7,50 € erhältst?}",
         answers: [{text: "500 €", value: 1}, {text: "550 €", value: 0}, {text: "600 €", value: 0}, {text: "825 €", value: 0}]
     },
-
+    //8
     {
         text: "\\text{Der Durchmesser eines Reifens}\\\\ \\text{beträgt 60 cm.}\\\\ \\text{Wie groß ist sein Umfang?}",
         answers: [{text: "19,1 cm", value: 0}, {text: "94,2 cm", value: 0}, {text: "102,25 cm", value: 0}, {text: "188,4 cm", value: 1}]
+    }
+*/
+    // 1
+    {
+        text: "x^{3} = 8",
+        answers: [{text: "2", value: 1}, {text: "1", value: 0}, {text: "3", value: 0}, {text: "4", value: 0}],
+    },
+    // 2
+    {
+        text: "x^{4} = 256",
+        answers: [{text: "4", value: 1}, {text: "3", value: 0}, {text: "5", value: 0}, {text: "6", value: 0}],
+    },
+    // 3
+    {
+        text: " \\int_{1}^2(2x+4)\\,dx",
+        answers: [{text: "7", value: 1}, {text: "10", value: 0}, {text: "13", value: 0}, {text: "5", value: 0}]
+
+    },
+    // 4
+    {
+        text: `5 * 10^{-2} =`,
+        answers: [{text: "0,05", value: 1}, {text: "0,5", value: 0}, {text: "0,005", value: 0}, {text: "500", value: 0}]
+
+    },
+    // 5
+    {
+        text: "5(x-3)=-10",
+        answers: [{text: "-2", value: 1}, {text: "-5", value: 0}, {text: "3", value: 0}, {text: "4", value: 0}]
+
+    },
+    // 6
+    {
+        text: "\\text{Der Radius eines Kreises}\\\\ \\text{beträgt 10 cm.}\\\\ \\text{Wie groß ist sein Umfang?}",
+        answers: [{text: "62,8 cm", value: 1}, {text: "31,4 cm", value: 0}, {text: "102,6 cm", value: 0}, {text: "188,4 cm", value: 0}]
+    },
+    // 7
+    {
+        text: "\\text{Berechnen Sie den Grenzwert}\\\\ \\\\ \\lim\\limits_{x\\to\\infty } ({8x+3 \\over 2x+6})",
+        answers: [{text: "4", value: 1}, {text: "+∞", value: 0}, {text: "8", value: 0}, {text: "2", value: 0}]
+    },  
+    // 8
+    {
+        text: "\\text{Berechnen Sie den Grenzwert}\\\\ \\\\ \\lim\\limits_{x\\to\\infty } ({4x^2+5 \\over 2x+4})",
+        answers: [{text: "+∞", value: 1}, {text: "2", value: 0}, {text: "4", value: 0}, {text: "unbekannt", value: 0}]
+    },
+    // 9
+    {
+        text: "\\text{Wie hoch ist die Zinsen,} \\\\ \\text{wenn du bei einem Zinssatz} \\\\ \\text{ von 1,5\\% im Jahr, Sparguthaben in Höhe} \\\\ \\text{von 3000 € erhältst?}",
+        answers: [{text: "45 €", value: 1}, {text: "30 €", value: 0}, {text: "150 €", value: 0}, {text: "75 €", value: 0}]
+    },  
+    // 10
+    {
+        text: "\\text{Berechnen Sie den Grenzwert}\\\\ \\\\ \\lim\\limits_{x\\to\\infty } ({4x+10 \\over 2x^3+7})",
+        answers: [{text: "0", value: 1}, {text: "-∞", value: 0}, {text: "+∞", value: 0}, {text: "2", value: 0}]
     }
 ];
 
@@ -279,7 +334,7 @@ const mathefragen =
 
 const internettechnologien =
     [
-//1
+/*
     {
         text: "Welches der folgenden Protokolle ist ein Internetprotokoll?",
         answers: [{text: "HTTP", value: 1}, {text: "HTML", value: 0}, {text: "CSS", value: 0}, {text: "UTP", value: 0}]
@@ -314,5 +369,53 @@ const internettechnologien =
         text: "Welche der folgenden Hardwarekomponenten verbindet verschiedene Netzwerke miteinander?",
         answers: [{text: "Router", value: 1}, {text: "Server", value: 0}, {text: "Dongle", value: 0}, {text: "Firewall", value: 0}]
 
+    }
+*/
+    // 1
+    {
+        text: "Welche Authentifizierung bietet HTTP?",
+        answers: [{text: "Digest Access Authentication", value: 1}, {text: "OTP", value: 0}, {text: "OAuth", value: 0}, {text: "2-Faktor-Authentifizierung", value: 0}]
+    },
+    // 2
+    {
+        text: "Welches Transportprotokoll eignet sich für zeitkritische Übertragungen",
+        answers: [{text: "UDP", value: 1}, {text: "TCP", value: 0}, {text: "HTTP", value: 0}, {text: "Fast Retransmit", value: 0}]
+    },
+    // 3
+    {
+        text: "Was ist ein SSL?",
+        answers: [{text: "Security certificate", value: 1}, {text: "Socket", value: 0}, {text: "Portal", value: 0}, {text: "DNS", value: 0}]
+    },
+    // 4
+    {
+        text: "Was definiert die Struktur und das Layout von Webseiten?",
+        answers: [{text: "HTML", value: 1}, {text: "XML", value: 0}, {text: "REST", value: 0}, {text: "CSS", value: 0}]
+    },
+    // 5
+    {
+        text: "Was dient zur Gestaltung und Responsive Design von Webseiten?",
+        answers: [{text: "CSS", value: 1}, {text: "Javascript", value: 0}, {text: "HTML", value: 0}, {text: "REST", value: 0}]
+    },
+    // 6
+    {
+        text: "Was dient zur dynamischen Manipulation von Webseiten?",
+        answers: [{text: "Javascript", value: 1}, {text: "CSS", value: 0}, {text: "HTML", value: 0}, {text: "REST", value: 0}]
+    },
+    // 7
+    {
+        text: "Was steht für HTML?",
+        answers: [{text: "Hypertext Markup Language", value: 1}, {text: "Hyperlinks and Text Markup Language", value: 0},
+            {text: "Home Tool Markup Language", value: 0}, {text: "High Technology Manual Language", value: 0}]
+    },
+    // 8
+    {
+        text: "Was steht für CSS?",
+        answers: [{text: "Cascading Style Sheets", value: 1}, {text: "Creative Style Sheets", value: 0},
+            {text: "Computer Style Sheets", value: 0}, {text: "Colorful Style Sheets", value: 0}]
+    },
+    // 9
+    {
+        text: "Was steht für JS?",
+        answers: [{text: "Javascript", value: 1}, {text: "JASON", value: 0}, {text: "Java Style", value: 0}, {text: "Java Sheet", value: 0}]
     }
 ]

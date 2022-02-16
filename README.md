@@ -3,7 +3,7 @@
 - [Link zur Webseite](https://s80287.github.io/Lernprogramm) 
 ---
 ## Bemerkung
-- Das Programm wurde im Browser `Firefox` überprüft
+- Das Programm wurde im Browser `Microsoft Edge` überprüft
 ---
 ## Funktionalität
 - Wahl zwischen 3 Kategorien: Mathe, Internettechnologie und Allgemein
