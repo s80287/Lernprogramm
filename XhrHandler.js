@@ -39,15 +39,15 @@ let status = null;
                  status = 'ok';
                 return;
             }
-            
+
             var url = 'https://irene.informatik.htw-dresden.de:8888/api/quizzes/' + frageID[i];
             //var url = 'https://irene.informatik.htw-dresden.de:8888/api/quizzes/' + getRandomInt(2, 33);
 
-            
+
             xhr.open("GET", url);
-            
+
             xhr.setRequestHeader("Authorization", "Basic " + btoa("test@gmail.com:secret"));
-            
+
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200 && status == null) { //warten bis alle frage heruntergeladen sind
                     final_result.push({
@@ -68,8 +68,8 @@ let status = null;
                 }
             }
             xhr.send();
-        })(0, 4);
-        //(0, frageID.length);
+        })//(0, 4);
+        (0, frageID.length);
 
 
     function getXhr() {
@@ -104,4 +104,13 @@ let status = null;
         return  xhr.onload;
     }
 
+    function sendXhr() {
+        let url = 'https://irene.informatik.htw-dresden.de:8888/api/quizzes/1/solve';
+        xhr.onreadystatechange = xhrHandler;
+        xhr.open('POST', url);
+        xhr.setRequestHeader("Authorization", "Basic " + window.btoa("test@gmail.com:secret"));
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.send(JSON.stringify(answers));
+    }
 
